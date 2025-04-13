@@ -28,7 +28,7 @@ public class Main {
         System.out.println("\n--------------- Annuity Present Value Calculator ---------------");
 
         // USER INPUT VARIABLES
-        System.out.println("\nPlease enter the monthly payout amount e.g. 3000: ");
+        System.out.println("\nPlease enter the monthly payout amount (no commas) e.g. 3000: ");
         double monthlyPayout = s.nextDouble();
 
         System.out.println("\nPlease enter the expected interest rate e.g. 2.5: ");
@@ -45,7 +45,7 @@ public class Main {
         double presentValue = annuityPresentValueCalc(monthlyPayout, expectedInterest, numberOfPayment);
 
         // DISPLAY
-        System.out.printf("\nTo fund annuity that pays $%.2f monthly \nfor %d years and \nearns an expected %.2f%% interest \nyou would need to invest $%.2f today."
+        System.out.printf("\nTo fund annuity that pays $%.2f monthly \nfor %d years and \nearns an expected %.2f%% interest \nyou would need to invest $%.2f today.\n"
         ,monthlyPayout, years, rawExpectedInterest, presentValue);
     }
 }
